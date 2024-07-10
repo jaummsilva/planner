@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": ["@rocketseat/eslint-config/react", "plugin:tailwindcss/recommended"],
+  "plugins": ["simple-import-sort"],
+  "rules": {
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "camelcase" : "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js"],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
+}
